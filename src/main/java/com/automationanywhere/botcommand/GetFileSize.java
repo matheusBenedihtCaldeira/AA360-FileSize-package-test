@@ -2,10 +2,8 @@ package com.automationanywhere.botcommand;
 
 import com.automationanywhere.botcommand.data.impl.NumberValue;
 import com.automationanywhere.botcommand.exception.BotCommandException;
+import com.automationanywhere.commandsdk.annotations.*;
 import com.automationanywhere.commandsdk.annotations.BotCommand;
-import com.automationanywhere.commandsdk.annotations.CommandPkg;
-import com.automationanywhere.commandsdk.annotations.Idx;
-import com.automationanywhere.commandsdk.annotations.Pkg;
 import com.automationanywhere.commandsdk.annotations.rules.NotEmpty;
 
 import java.nio.file.Files;
@@ -29,7 +27,7 @@ import static com.automationanywhere.commandsdk.model.DataType.NUMBER;
         return_description = "[[GetFileDetails.return_label_description]]"
 )
 public class GetFileSize {
-
+    @Execute
     public NumberValue action(
             //Idx 1 would be displayed first, with a text box for entering the value.
             @Idx(index = "1", type = FILE)
