@@ -7,7 +7,6 @@
 	"GetFileDetails.return_label": "File Size",
 	"GetFileDetails.return_label_description": "Returned in bytes",
 	"GetFileDetails.filePath.label": "Select a File for Anaylsis",
-	"group": "Micah Smith",
-	"vendor": "Micah_Smith"
-
+	"group": "Matheus Benediht Caldeora",
+	"vendor": "Matheus_Benediht_Caldeira"
 }
